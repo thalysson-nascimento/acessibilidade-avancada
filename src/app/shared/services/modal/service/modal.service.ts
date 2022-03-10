@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { ModalConfig } from '../../../interfaces/modal-config';
+import { ModalConfig } from '@interfaces/modal/modal.interface';
 
 @Injectable()
 export class ModalService {
