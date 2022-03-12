@@ -1,5 +1,6 @@
 import { Component, OnInit, TemplateRef, ViewChild } from '@angular/core';
-import { ModalRef, ModalService } from '@services/modal/modal.service';
+import { ModalRef } from '@models/modal-ref';
+import { ModalService } from '@services/modal/modal.service';
 
 @Component({
   selector: 'app-root',
