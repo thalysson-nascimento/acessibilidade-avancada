@@ -18,7 +18,7 @@ export class AppComponent implements OnInit {
   show() {
     this.modalRef = this.modalService.open({
       templateRef: this.modalTemplateRef,
-      title: 'Thalysson',
+      title: 'Formulário para registro de usuário',
     });
   }
 }

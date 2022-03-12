@@ -6,7 +6,7 @@ import {
 } from '@angular/core';
 
 @Injectable({ providedIn: 'root' })
-export class BodyInjectorService {
+export class BodyInjectorModalService {
   constructor(private applicarionRef: ApplicationRef) {}
 
   stackBeforeAppRoot(componentRef: ComponentRef<any>): void {
