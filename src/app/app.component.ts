@@ -1,5 +1,5 @@
 import { Component, OnInit, TemplateRef, ViewChild } from '@angular/core';
-import { ModalRef, ModalService } from '@servises/modal/service/modal.service';
+import { ModalRef, ModalService } from '@services/modal/modal.service';
 
 @Component({
   selector: 'app-root',
@@ -16,11 +16,9 @@ export class AppComponent implements OnInit {
   ngOnInit(): void {}
 
   show() {
-    const configModal = {
+    this.modalRef = this.modalService.open({
       templateRef: this.modalTemplateRef,
-      title: 'Teste modal',
-    };
-
-    this.modalRef = this.modalService.open(configModal);
+      title: 'Formulário para registro de usuário',
+    });
   }
 }
