@@ -6,12 +6,12 @@ import {
 } from '@angular/core';
 
 @Injectable({ providedIn: 'root' })
-export class BodyInjectorModalService {
+export class BodyInjectorService {
   constructor(private applicarionRef: ApplicationRef) {}
 
-  stackBeforeAppRoot(componentRef: ComponentRef<any>): void {
+  stackBeforeAppRoot(componentRef: ComponentRef<any>, hostView: string): void {
     const domElement = this.createDomElement(componentRef);
-    const appRoot = document.body.querySelector('app-root');
+    const appRoot = document.body.querySelector(hostView);
     document.body.insertBefore(domElement, appRoot);
   }
 
