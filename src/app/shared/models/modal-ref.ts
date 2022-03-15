@@ -5,7 +5,7 @@ export class ModalRef {
   constructor(private componentRef: ComponentRef<ModalComponent>) {}
 
   close(): void {
-    console.log('closed called');
     this.componentRef.destroy();
+    console.log('closed called');
   }
 }
