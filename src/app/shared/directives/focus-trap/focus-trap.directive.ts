@@ -15,6 +15,10 @@ export class FocusTrapDirective implements AfterViewInit {
   constructor(private elementRef: ElementRef<any>) {}
 
   ngAfterViewInit(): void {
+    this.getFocusEnableElements();
+  }
+
+  getFocusEnableElements(): void {
     const focusAllEnableableElements = this.elementRef.nativeElement
       .querySelectorAll(`
         [tabindex]:not([tabindex="-1"]),
