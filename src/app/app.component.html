@@ -58,8 +58,14 @@
     <br />
 
     <div>
-      <button [attr.aria-disabled]="this.form.invalid">submit</button>
-      <button (click)="modalRef.close()">cancel</button>
+      <app-button
+        label="submit"
+        type="submit"
+        [ariaDisabled]="this.form.invalid"
+      ></app-button>
+      <br />
+
+      <app-button label="cancel" (click)="close()"></app-button>
     </div>
   </form>
 </ng-template>

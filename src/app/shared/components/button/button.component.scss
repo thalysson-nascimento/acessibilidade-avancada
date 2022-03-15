@@ -1,0 +1,18 @@
+.contain-button {
+  width: 100%;
+}
+
+.button {
+  width: 100%;
+  background-color: #333;
+  border: none;
+  border-radius: 0.3rem;
+  padding: 1rem;
+  font-size: 1rem;
+  color: #fff;
+
+  &__disabled {
+    background-color: #999;
+    color: #555;
+  }
+}

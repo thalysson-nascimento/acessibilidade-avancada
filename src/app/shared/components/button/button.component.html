@@ -1,0 +1,12 @@
+<div class="contain-button">
+  <button
+    [ngClass]="ariaDisabled == false ? 'button' : 'button__disabled'"
+    class="button"
+    [id]="id"
+    [type]="type"
+    [attr.aria-label]="label"
+    [attr.aria-disabled]="ariaDisabled"
+  >
+    {{ label }}
+  </button>
+</div>

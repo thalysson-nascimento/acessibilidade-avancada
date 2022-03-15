@@ -39,14 +39,19 @@ export class AppComponent implements OnInit {
     });
   }
 
-  submit() {
-    console.log(this.form.value);
+  close() {
+    console.log('fechar modal');
+    return this.modalRef.close();
+  }
 
+  submit() {
     if (this.form.invalid) {
+      console.log('formulário invalido');
       return;
     }
 
     this.modalRef.close();
     console.log('formulario subimetido com sucesso');
+    console.log(this.form.value);
   }
 }
